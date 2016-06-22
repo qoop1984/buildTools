@@ -11,12 +11,30 @@ class oracleUntils:
         cur = self.con.cursor()  # 打开游标
         cur.execute(sql)
         result = cur.fetchall()
+        print result[0].read()
         print '数据库记录数'.decode('GBK') + str(cur.rowcount)
         for row in result:
             print row[0].decode('GBK')
             # print row
         cur.close()
         return result
+
+    def executeQueryOne(self, sql):
+        cur = self.con.cursor()  # 打开游标
+        cur.execute(sql)
+        result = cur.fetchone()
+        print result[0]
+        #result.read()
+        cur.close()
+        return result
+    def executeQueryOneColb(self, sql):
+        cur = self.con.cursor()  # 打开游标
+        cur.execute(sql)
+        result = cur.fetchone()
+        result = result[0]
+        cur.close()
+        print result.read()
+        return result.read()
     def insertOrUpdate(self,sql,para):
         cur = self.con.cursor()  # 打开游标
         result=cur.execute(sql,para)
