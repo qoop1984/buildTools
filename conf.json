@@ -1,9 +1,14 @@
-{ "people": [
-
-{ "firstName": "Brett", "lastName":"McLaughlin", "email": "aaaa" },
-
-{ "firstName": "Jason", "lastName":"Hunter", "email": "bbbb"},
-
-{ "firstName": "Elliotte", "lastName":"Harold", "email": "cccc" }
-
-]}
+{
+    "projects": {
+        "channel": {
+            "projectName": "渠道",
+            "locaProjectPath": "D:\\AeWorkspace\\chnl_beij\\web",
+            "projectEnName": "channel"
+        },
+        "rwd": {
+            "projectName": "酬金",
+            "locaProjectPath": "D:\\AeWorkspace\\rwd_beij\\html",
+            "projectEnName": "channel"
+        }
+    }
+}
